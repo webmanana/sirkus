@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #222222;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #9B1515;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul, ol {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+input::placeholder {
+	font-size: 15px;
+	text-align: center;
+	color: #7A7A7E;
+}
+.wrap {
+    background: #F9F9F9;
+}
