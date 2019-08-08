@@ -2,127 +2,79 @@
 <html lang="ru" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>Бичик</title>
+		<title>Сахацирк</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 		<link rel="stylesheet" href="vendor/foundation/css/app.css">
+		<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="header_inner">
-				<div class="header_logo">
-					<a href="#">
-						<div class="header_logo_img">
-							<img src="img/logo.png" alt="Бичик">
-						</div>
-					</a>
-				</div>
-				<div class="header_menu_inner">
-					<div class="header_top_content">
-						<div class="header_top_menu">
-							<ul>
-								<li><a href="#">Издательство</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Магазины</a></li>
-								<li><a href="#">Новости и события</a></li>
-								<li><a href="#">Оплата и доставка</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</div>
-						<div class="header_top_url">
-							<div class="header_top_login">
-								<a href="#" data-open="exampleModal1">Войти</a>
-								<div class="line"></div>
-								<a href="#" data-open="exampleModal2">Регистрация</a>
+			<div class="container">
+				<div class="header_inner">
+					<div class="header_logo">
+						<a href="#">
+							<div class="header_logo_img">
+								<img src="img/logo.png" alt="Бичик">
 							</div>
-
-							<div class="reveal login_modal_inner" id="exampleModal1" data-reveal>
-								<div class="login_modal">
-									<span class="login_modal_title">ВОЙТИ</span>
-									<form class="login_modal_form" action="index.html" method="post">
-										<input type="text" name="" value="" placeholder="Введите E-Mail">
-										<input type="password" name="" value="" placeholder="Пароль">
-										<input type="submit" name="" value="Войти на сайт">
-									</form>
-								    <div class="login_modal_footer">
-								    	<a href="#">Забыл пароль</a>
-										<a href="#">Пройти регистрацию</a>
-								    </div>
-								</div>
-							</div>
-							<div class="reveal login_modal_inner" id="exampleModal2" data-reveal>
-								<div class="login_modal">
-									<span class="login_modal_title">РЕГИСТРАЦИЯ</span>
-									<form class="login_modal_form" action="index.html" method="post">
-										<input type="text" name="" value="" placeholder="Ваш E-Mail">
-										<input type="password" name="" value="" placeholder="Придумайте пароль">
-										<input type="password" name="" value="" placeholder="Повторите пароль">
-										<input type="submit" name="" value="Зарегистрироваться">
-									</form>
-								    <div class="login_modal_footer">
-								    	<a href="#">У меня уже есть аккаунт! Войти!</a>
-								    </div>
-								</div>
-							</div>
-
-							<div class="header_top_search">
-								<a href="#">
-									<div class="header_top_search_img">
-										<img src="img/search.svg" alt="">
-									</div>
-									<span>Поиск</span>
-								</a>
-							</div>
-							<div class="header_top_cart">
-								<a href="#">
-									<div class="cart_inner">
-										<div class="cart_img">
-											<img src="img/cart.svg" alt="">
-										</div>
-										<div class="cart_col">
-											<span>0</span>
-										</div>
-									</div>
-									<span class="cart_text">Корзина</span>
-								</a>
-							</div>
-						</div>
+						</a>
 					</div>
-					<div class="header_bottom_content">
-						<div class="header_bottom_menu">
-							<ul>
-								<li><a href="#"><img src="img/burger.svg" alt=""></a></li>
-								<li><a href="#">Книги</a></li>
-								<li><a href="#">Учебные издания</a></li>
-								<li><a href="#">Игрушки и игры</a></li>
-								<li><a href="#">Подарки, сувениры и букбоксы</a></li>
-							</ul>
+					<div class="header_menu_inner">
+						<div class="header_top_content">
+							<form class="loop_inner" action="index.html" method="post">
+								<input type="search" name="q" placeholder="Поиск на сайте...">
+							</form>
+							<div class="header_top_right">
+								<div class="social_inner">
+									<span>Мы в соцсетях:</span>
+									<a href="#"><img src="img/insta.svg" alt="instagram"></a>
+									<a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+								</div>
+								<span>Касса: 8 (4112) 40-40-40</span>
+							</div>
 						</div>
-						<div class="header_bottom_stock">
-							<a href="#" class="stock_1">
-								<div class="stock_img">
-									<img src="img/procent.svg" alt="">
-								</div>
-								<span>Акции</span>
-							</a>
-							<a href="#" class="stock_2">
-								<div class="stock_img">
-									<img src="img/star.svg" alt="">
-								</div>
-								<span>Новинки</span>
-							</a>
-							<a href="#" class="stock_3">
-								<div class="stock_img">
-									<img src="img/king.svg" alt="">
-								</div>
-								<span>Бестселлеры</span>
-							</a>
+						<div class="header_bottom_content">
+							<div class="header_bottom_menu">
+								<ul>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Медиатека</a></li>
+									<li><a href="#">Гастроли</a></li>
+									<li><a href="#">Мамонтенок</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Еще</a></li>
+								</ul>
+							</div>
+							<a href="#" class="header_afisha">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
 						</div>
 					</div>
 				</div>
 			</div>
-
+			<!-- slide -->
+			<div class="slide_inner">
+				<div class="slide_content">
+					<a href="#" class="arrow_left"></a>
+					<div class="slide_block">
+						<div class="slide_img" style="background-image:url(./img/slide1.jpg)">
+							<div class="slide_text">
+								<span class="slide_date">24 июня 2019</span>
+								<h2>Скидка 50% на билеты на цирковые выступления! Осенний сезон</h2>
+								<p>Скидка распространяется на все цирковые программы в период с 01.09.19 по 31.11.19 включительно</p>
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="slide_img" style="background-image:url(./img/slide1.jpg)">
+							<div class="slide_text">
+								<span class="slide_date">24 июня 2019</span>
+								<h2>Скидка 50% на билеты на цирковые выступления! Осенний сезон</h2>
+								<p>Скидка распространяется на все цирковые программы в период с 01.09.19 по 31.11.19 включительно</p>
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="arrow_right"></a>
+				</div>
+			</div>
 			<!-- footer -->
 			<div class="footer">
 				<div class="footer_top">
@@ -181,5 +133,19 @@
 	<script src="vendor/foundation/js/vendor/what-input.js"></script>
 	<script src="vendor/foundation/js/vendor/foundation.js"></script>
 	<script src="vendor/foundation/js/app.js"></script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script src="main.js"></script>
+
+	<script type="text/javascript">
+		$('.slide_block').slick({
+			slidesToShow: 1,
+			arrows: true,
+			fade: false,
+			centerPadding: '100px',
+			centerMode: false,
+			infinite: false,
+			prevArrow: $('.arrow_left'),
+			nextArrow: $('.arrow_right'),
+		});
+	</script>
 </html>

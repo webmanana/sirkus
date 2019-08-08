@@ -1,8 +1,35 @@
+@font-face {
+	font-family: 'GothamPro';
+	src: url('vendor/fonts/GothamPro.eot');
+	src: url('vendor/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+	url('vendor/fonts/GothamPro.woff') format('woff'),
+	url('vendor/fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamPro';
+	src: url('vendor/fonts/GothamPro-Medium.eot');
+	src: url('vendor/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('vendor/fonts/GothamPro-Medium.woff') format('woff'),
+	url('vendor/fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamPro';
+	src: url('vendor/fonts/GothamPro-Bold.eot');
+	src: url('vendor/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('vendor/fonts/GothamPro-Bold.woff') format('woff'),
+	url('vendor/fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 * {
     box-sizing: border-box;
 }
 body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'GothamPro', sans-serif;
 	font-size: 14px;
 	color: #222222;
 	position: relative;
@@ -11,10 +38,11 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #9B1515;
+    color: #000;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #CF0000;
 }
 ul, ol {
 	list-style-type: none;
@@ -28,4 +56,66 @@ input::placeholder {
 }
 .wrap {
     background: #F9F9F9;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+/* header */
+.header_inner {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header_logo {
+    width: 94px;
+}
+.header_menu_inner {
+    flex: 1;
+}
+.header_top_content {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.header_bottom_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.header_bottom_menu ul {
+    display: flex;
+    flex-direction: row;
+}
+.header_bottom_menu ul li {
+    margin-right: 30px;
+}
+.header_bottom_menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 15px;
+    color: #000;
+    font-weight: 500;
+}
+.header_bottom_menu ul li a:hover {
+    color: #CF0000;
+}
+.loop_inner {
+    flex: 1;
+}
+.header_top_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+.header_afisha {
+    color: #CF0000;
+    font-weight: 500;
+}
+.header_afisha:hover {
+    color: #B50000;
 }
