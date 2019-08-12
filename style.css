@@ -241,7 +241,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	line-height: 20px;
 	color: #7E7E7E;
 }
-.arrow_left {
+.arrow_left, .afisha_arrow_left, .media_arrow_left {
 	width: 40px;
 	height: 40px;
 	display: flex;
@@ -255,10 +255,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	z-index: 11;
 	padding-right: 3px;
 }
-.arrow_right:hover, .arrow_right:hover {
+.arrow_left:hover, .arrow_right:hover {
 	background: #B50000;
 }
-.arrow_right {
+.arrow_right, .afisha_arrow_right, .media_arrow_right {
 	width: 40px;
 	height: 40px;
 	display: flex;
@@ -338,6 +338,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	max-width: 100%;
 	overflow: hidden;
 	height: 370px;
+	position: relative;
 }
 .afisha_block {
 	background: #FFFFFF;
@@ -547,6 +548,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	padding-bottom: 24px;
 	height: 350px;
 	overflow: hidden;
+	position: relative;
 }
 .media_date {
 	margin-bottom: 10px;

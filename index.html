@@ -97,6 +97,9 @@
 					</div>
 				</div>
 				<div class="afisha_container">
+					<a href="#" class="afisha_arrow_left">
+						<img src="img/arrow_left.svg" alt="">
+					</a>
 					<div class="afisha_slide">
 						<div class="afisha_block">
 							<div class="afisha_img" style="background-image:url(./img/afisha1.jpg)"></div>
@@ -199,6 +202,9 @@
 						<div>
 						</div>
 					</div>
+					<a href="#" class="afisha_arrow_right">
+						<img src="img/arrow_right.svg" alt="">
+					</a>
 				</div>
 			</div>
 
@@ -277,6 +283,9 @@
 					</div>
 				</div>
 				<div class="media_container">
+					<a href="#" class="media_arrow_left">
+						<img src="img/arrow_left.svg" alt="">
+					</a>
 					<div class="media_slide">
 						<div class="media_block">
 							<div class="media_img" style="background-image:url(./img/media1.jpg)"></div>
@@ -339,6 +348,9 @@
 							</div>
 						</div>
 					</div>
+					<a href="#" class="media_arrow_right">
+						<img src="img/arrow_right.svg" alt="">
+					</a>
 				</div>
 			</div>
 
@@ -513,16 +525,18 @@
 			centerMode: true,
 			infinite: true,
 			variableWidth: true,
-			prevArrow: $('.arrow_left'),
-			nextArrow: $('.arrow_right'),
+			prevArrow: $('.media_arrow_left'),
+			nextArrow: $('.media_arrow_right'),
 		});
 		$('.afisha_slide').slick({
 			slidesToShow: 5,
 			variableWidth: true,
-			arrows: false,
+			arrows: true,
 			fade: false,
 			centerMode: false,
 			infinite: false,
+			prevArrow: $('.afisha_arrow_left'),
+			nextArrow: $('.afisha_arrow_right'),
 		});
 	</script>
 </html>
