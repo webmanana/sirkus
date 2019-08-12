@@ -153,10 +153,12 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 33%;
 }
 .header_top_right span {
-	font-size: 16px;
-	line-height: 15px;
-	color: #000000;
-	font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .header_afisha {
     color: #CF0000;
@@ -165,10 +167,17 @@ input[type="search"]::-webkit-search-results-decoration {
 .header_afisha:hover {
     color: #B50000;
 }
+.social_inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
 .social_inner a {
 	margin-left: 10px;
+	display: flex;
 }
-.social_inner a:hover img svg {
+.social_inner a:hover svg path {
 	fill: #CF0000;
 }
 /* slide */
@@ -553,8 +562,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .media_date {
 	margin-bottom: 10px;
 }
-.media_title {
-}
 .media_title h3 {
 	font-size: 16px;
 	line-height: 20px;
@@ -686,7 +693,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer_social_img a {
 	margin-left: 10px;
 }
-.footer_social_img a:hover img svg {
+.footer_social_img a:hover svg path {
 	fill: #CF0000;
 }
 .footer_bottom {
