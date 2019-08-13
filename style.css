@@ -163,6 +163,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header_afisha {
     color: #CF0000;
     font-weight: 500;
+	font-size: 16px;
 }
 .header_afisha:hover {
     color: #B50000;
@@ -253,7 +254,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .arrow_left, .afisha_arrow_left, .media_arrow_left {
 	width: 40px;
 	height: 40px;
-	display: flex;
+	display: flex!important;
 	align-items: center;
 	justify-content: center;
 	position: absolute;
@@ -263,6 +264,9 @@ input[type="search"]::-webkit-search-results-decoration {
 	border-radius: 50%;
 	z-index: 11;
 	padding-right: 3px;
+}
+.afisha_arrow_left.slick-disabled {
+	display: none!important;
 }
 .arrow_left:hover, .arrow_right:hover {
 	background: #B50000;
@@ -395,16 +399,17 @@ input[type="search"]::-webkit-search-results-decoration {
 	padding: 16px 18px;
 }
 .afisha_desc a {
-	background: #CF0000;
-	border-radius: 8px;
-	padding: 8px 16px;
-	color: #fff;
-	font-weight: 500;
-	max-width: 150px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-top: 20px;
+    background: #CF0000;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 500;
+    max-width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
 }
 .afisha_desc a:hover {
 	background: #B50000;
@@ -589,12 +594,14 @@ input[type="search"]::-webkit-search-results-decoration {
 	text-align: center;
 }
 .banner_title {
-	font-size: 32px;
-	line-height: 24px;
-	text-align: center;
-	color: #FFFFFF;
-	font-weight: bold;
-	margin-bottom: 38px;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
 }
 .banner_desc {
 	font-size: 14px;
@@ -706,6 +713,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	width: 16.6666%;
 	font-size: 16px;
 	line-height: 24px;
+	margin-bottom: 80px;
 }
 .footer_block_title {
 	color: #fff;
