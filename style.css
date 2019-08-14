@@ -492,6 +492,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	color: #000000;
 	margin-top: 0;
 	margin-bottom: 8px;
+	font-family: "GothamPro", sans-serif;
 }
 .news_small_desc a:hover h3 {
 	color: #CF0000;
@@ -743,4 +744,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .platforma a img {
 	margin-left: 10px;
+}
+@media (max-width: 1560px) {
+	.advan_content {
+		margin: 0;
+	}
+}
+@media (max-width: 1440px) {
+	.container, .slide_container, .afisha_slide .slick-list {
+		max-width: 1200px;
+	}
+	.header_top_right {
+		width: 38%;
+	}
+}
+@media (max-width: 1320px) {
+
 }
