@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="container">
+			<div class="header_container">
 				<div class="header_inner">
 					<div class="header_logo">
 						<a href="#">
@@ -44,12 +44,34 @@
 									<li><a href="#">Гастроли</a></li>
 									<li><a href="#">Мамонтенок</a></li>
 									<li><a href="#">Контакты</a></li>
-									<li><a href="#">Еще <img src="img/header_bottom_arrow.svg" alt=""></a></li>
+									<li><a href="#" data-toggle="dropdown">Еще <img src="img/header_bottom_arrow.svg" alt=""></a></li>
 								</ul>
+								<div class="dropdown-pane dropdown_menu" id="dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">О цирке</a></li>
+										<li><a href="#">Награды</a></li>
+										<li><a href="#">Партнеры</a></li>
+										<li><a href="#">Закупки</a></li>
+									</ul>
+								</div>
 							</div>
-							<a href="#" class="header_afisha">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
+							<a href="#" class="afisha_mobile">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
 						</div>
 					</div>
+					<div class="header_mobile_menu">
+						<ul>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Медиатека</a></li>
+							<li><a href="#">Гастроли</a></li>
+							<a href="#" class="header_afisha">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
+						</ul>
+						<span>Касса: 8 (4112) 40-40-40</span>
+					</div>
+					<form class="loop_inner_mobile" action="index.html" method="post">
+						<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
+						<div class="search"></div>
+					</form>
+					<a href="#" class="burger_mobile" data-toggle="offCanvasTop1"><img src="img/burger.svg" alt=""></a>
 				</div>
 			</div>
 
@@ -191,9 +213,9 @@
 			<div class="news_inner">
 				<div class="container">
 					<div class="title">
-						<h4>Представления</h4>
+						<h4>Новости</h4>
 						<div class="line"></div>
-						<a href="#">Перейти к афише</a>
+						<a href="#">Все новости</a>
 					</div>
 					<div class="news_content">
 						<div class="news_big">
@@ -470,6 +492,68 @@
 				</div>
 			</div>
 		</div>
+		<div class="off-canvas-wrapper">
+		    <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+			    <div class="canvas_content">
+					<div class="canvas_menu">
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">О цирке</a></li>
+								<li><a href="#">О компании</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Новости</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Галерея</a></li>
+								<li><a href="#">Галерея цирка</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Гастроли</a></li>
+								<li><a href="#">Тур “Тепло Вечной Мерзлоты 2019”</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Мамонтенок</a></li>
+								<li><a href="#">Годы проведения</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Контакты</a></li>
+								<li><a href="#">Контактная информация</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Партнеры</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+						<div class="canvas_menu_block">
+							<ul>
+								<li><a href="#" class="canvas_menu_title">Закупки</a></li>
+								<li><a href="#">Закупочные процедуры</a></li>
+							</ul>
+						</div>
+					</div>
+					<form class="loop_inner_canvas" action="index.html" method="post">
+						<img src="img/loop.svg" alt="">
+						<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
+						<input type="submit" name="" value="">
+					</form>
+			    </div>
+				<a href="#" class="burger_mobile_close" data-toggle="offCanvasTop1"><img src="img/close.svg" alt=""></a>
+		    </div>
+		</div>
 	</body>
 
 	<script src="vendor/foundation/js/vendor/jquery.js"></script>
@@ -499,6 +583,7 @@
 		$('.media_slide').slick({
 			slidesToShow: 4,
 			arrows: true,
+			cssEase: 'linear',
 			fade: false,
 			dots: false,
 			centerMode: true,
@@ -510,6 +595,7 @@
 		$('.afisha_slide').slick({
 			slidesToShow: 5,
 			variableWidth: true,
+			cssEase: 'linear',
 			arrows: true,
 			fade: false,
 			centerMode: false,
