@@ -2,91 +2,94 @@
 <html lang="ru" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Сахацирк</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 		<link rel="stylesheet" href="vendor/foundation/css/app.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="header_container">
-				<div class="header_inner">
-					<div class="header_logo">
-						<a href="#">
-							<div class="header_logo_img">
-								<img src="img/logo.png" alt="Бичик">
-							</div>
-						</a>
-					</div>
-					<div class="header_menu_inner">
-						<div class="header_top_content">
-							<form class="loop_inner" action="index.html" method="post">
-								<img src="img/loop.svg" alt="">
-								<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
-							</form>
-							<div class="header_top_right">
-								<div class="social_inner">
-									<span>Мы в соцсетях:</span>
-									<a href="#"><img src="img/insta.svg" alt="instagram"></a>
-									<a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+			<div class="header_wrap">
+				<div class="header_container">
+					<div class="header_inner">
+						<div class="header_logo">
+							<a href="#">
+								<div class="header_logo_img">
+									<img src="img/logo.png" alt="Бичик">
 								</div>
-								<span>Касса: 8 (4112) 40-40-40</span>
-							</div>
-							<div class="border"></div>
+							</a>
 						</div>
-						<div class="header_bottom_content">
-							<div class="header_bottom_menu">
-								<ul>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">Медиатека</a></li>
-									<li><a href="#">Гастроли</a></li>
-									<li><a href="#">Мамонтенок</a></li>
-									<li><a href="#">Контакты</a></li>
-									<li><a href="#" data-toggle="dropdown">Еще <img src="img/header_bottom_arrow.svg" alt=""></a></li>
-								</ul>
-								<div class="dropdown-pane dropdown_menu" id="dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+						<div class="header_menu_inner">
+							<div class="header_top_content">
+								<form class="loop_inner" action="index.html" method="post">
+									<img src="img/loop.svg" alt="">
+									<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
+								</form>
+								<div class="header_top_right">
+									<div class="social_inner">
+										<span>Мы в соцсетях:</span>
+										<a href="#"><img src="img/insta.svg" alt="instagram"></a>
+										<a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+									</div>
+									<span>Касса: 8 (4112) 40-40-40</span>
+								</div>
+								<div class="border"></div>
+							</div>
+							<div class="header_bottom_content">
+								<div class="header_bottom_menu">
 									<ul>
-										<li><a href="#">О цирке</a></li>
-										<li><a href="#">Награды</a></li>
-										<li><a href="#">Партнеры</a></li>
-										<li><a href="#">Закупки</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Медиатека</a></li>
+										<li><a href="#">Гастроли</a></li>
+										<li><a href="#">Мамонтенок</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#" data-toggle="dropdown">Еще <img src="img/header_bottom_arrow.svg" alt=""></a></li>
 									</ul>
+									<div class="dropdown-pane dropdown_menu" id="dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><a href="#">О цирке</a></li>
+											<li><a href="#">Награды</a></li>
+											<li><a href="#">Партнеры</a></li>
+											<li><a href="#">Закупки</a></li>
+										</ul>
+									</div>
 								</div>
+								<a href="#" class="afisha_mobile">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
 							</div>
-							<a href="#" class="afisha_mobile">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
 						</div>
-					</div>
-					<div class="header_mobile_menu">
-						<ul>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Медиатека</a></li>
-							<li><a href="#">Гастроли</a></li>
-							<a href="#" class="header_afisha">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
-						</ul>
-						<span>Касса: 8 (4112) 40-40-40</span>
-					</div>
-					<form class="loop_inner_mobile" action="index.html" method="post">
-						<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
-						<div class="search"></div>
-					</form>
-					<a href="#" class="burger_mobile" data-toggle="offCanvasTop1"><img src="img/burger.svg" alt=""></a>
-					<a href="#" class="burger_mobile_only" data-toggle="dropdown_mobile_menu"><img src="img/burger.svg" alt=""></a>
-					<div class="dropdown-pane dropdown_menu_inner" id="dropdown_mobile_menu" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
-						<ul>
-							<li><a href="#" class="header_afisha">Перейти к афише <img src="img/header_right_arrow.svg" alt=""></a></li>
-							<li><a href="#">О цирке</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Награды</a></li>
-							<li><a href="#" class="active">Медиатека</a></li>
-							<li><a href="#">Мамонтенок</a></li>
-							<li><a href="#">Гастроли</a></li>
-							<li><a href="#">Партнеры</a></li>
-							<li><a href="#">Закупки</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="header_mobile_menu">
+							<ul>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Медиатека</a></li>
+								<li><a href="#">Гастроли</a></li>
+								<a href="#" class="header_afisha">Афиша мероприятий <img src="img/header_right_arrow.svg" alt=""></a>
+							</ul>
+							<span>Касса: 8 (4112) 40-40-40</span>
+						</div>
+						<form class="loop_inner_mobile" action="index.html" method="post">
+							<input type="search" class="header_search" name="q" placeholder="Поиск на сайте...">
+							<div class="search"></div>
+						</form>
+						<a href="#" class="burger_mobile" data-toggle="offCanvasTop1"><img src="img/burger.svg" alt=""></a>
+						<a href="#" class="burger_mobile_only" data-toggle="dropdown_mobile_menu"><img src="img/burger.svg" alt=""></a>
+						<div class="dropdown-pane dropdown_menu_inner" id="dropdown_mobile_menu" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+							<ul>
+								<li><a href="#" class="header_afisha">Перейти к афише <img src="img/header_right_arrow.svg" alt=""></a></li>
+								<li><a href="#">О цирке</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Награды</a></li>
+								<li><a href="#" class="active">Медиатека</a></li>
+								<li><a href="#">Мамонтенок</a></li>
+								<li><a href="#">Гастроли</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Закупки</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -454,58 +457,68 @@
 					</div>
 				</div>
 				<div class="container">
-					<div class="footer_bottom">
-						<div class="footer_block">
-							<span class="footer_block_title">О цирке</span>
-							<ul>
-								<li><a href="#">О компании</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Новости</span>
-							<ul>
-								<li><a href="#">Новости</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Галерея</span>
-							<ul>
-								<li><a href="#">Галерея цирка</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Гастроли</span>
-							<ul>
-								<li><a href="#">Тур “Тепло Вечной Мерзлоты 2019”</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Мамонтенок</span>
-							<ul>
-								<li><a href="#">Годы проведения</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Контакты</span>
-							<ul>
-								<li><a href="#">Контактная информация</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Партнеры</span>
-							<ul>
-								<li><a href="#">Новости</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_block_title">Закупки</span>
-							<ul>
-								<li><a href="#">Закупочные процедуры</a></li>
-							</ul>
+					<div class="footer_dropdown">
+						<button onclick="footerArrow()" id="arBottom">
+							<p>Карта сайта <img src="img/footer_arrow_bottom.svg" alt=""></p>
+							<p style="display: none">Свернуть <img src="img/footer_arrow_top.svg" alt=""></p>
+						</button>
+
+					</div>
+					<div id="footerSlide">
+						<div class="footer_bottom">
+							<div class="footer_block">
+								<span class="footer_block_title">О цирке</span>
+								<ul>
+									<li><a href="#">О компании</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Новости</span>
+								<ul>
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Галерея</span>
+								<ul>
+									<li><a href="#">Галерея цирка</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Гастроли</span>
+								<ul>
+									<li><a href="#">Тур “Тепло Вечной Мерзлоты 2019”</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Мамонтенок</span>
+								<ul>
+									<li><a href="#">Годы проведения</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Контакты</span>
+								<ul>
+									<li><a href="#">Контактная информация</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Партнеры</span>
+								<ul>
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</div>
+							<div class="footer_block">
+								<span class="footer_block_title">Закупки</span>
+								<ul>
+									<li><a href="#">Закупочные процедуры</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+
 				</div>
-				<div class="container">
+				<div class="container" id="copy">
 					<div class="copyright">
 						<div class="platforma">
 							<a href="#">Разработано в <img src="img/platforma.svg" alt=""></a>
@@ -585,27 +598,29 @@
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script src="main.js"></script>
 	<script type="text/javascript">
+	function moreText() {
+		var dots = document.getElementById("dots");
+		var moreText = document.getElementById("more");
+		var btnText = document.getElementById("myBtn");
+
+		if (dots.style.display === "none") {
+			dots.style.display = "inline";
+			btnText.innerHTML = "Читать далее <img src='img/more_arrow_bottom.svg'>";
+			moreText.style.display = "none";
+		} else {
+			dots.style.display = "none";
+			btnText.innerHTML = "Свернуть";
+			moreText.style.display = "inline";
+		}
+	}
+
 		$('.header_search').focus(function() {
 			$('.border').addClass('active');
 		});
 		$('.header_search').focusout(function() {
 			$('.border').removeClass('active');
 		});
-		function moreText() {
-			var dots = document.getElementById("dots");
-			var moreText = document.getElementById("more");
-			var btnText = document.getElementById("myBtn");
 
-			if (dots.style.display === "none") {
-				dots.style.display = "inline";
-				btnText.innerHTML = "Читать далее <img src='img/more_arrow_bottom.svg'>";
-				moreText.style.display = "none";
-			} else {
-				dots.style.display = "none";
-				btnText.innerHTML = "Свернуть";
-				moreText.style.display = "inline";
-			}
-		}
 		$('.slide_block').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -655,6 +670,22 @@
 			infinite: false,
 			prevArrow: $('.afisha_arrow_left'),
 			nextArrow: $('.afisha_arrow_right'),
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					centerMode: false,
+				  }
+				},
+				{
+				  breakpoint: 532,
+				  settings: {
+					slidesToShow: 1,
+					centerMode: false,
+				  }
+				}
+			]
 		});
 	</script>
 </html>

@@ -19,3 +19,8 @@ $('img[src$=".svg"]').each(function() {
 	  $img.replaceWith($svg);
 	}, 'xml');
 });
+function footerArrow() {
+	$("#footerSlide").toggle();
+	$("#arBottom p").toggle();
+	$("#copy").toggle();
+}
