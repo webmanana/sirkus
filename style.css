@@ -991,6 +991,66 @@ input[type="search"]::-webkit-search-results-decoration {
 .nav_next:hover {
 	color: #B50000;
 }
+/* page news */
+.page_section {
+	display: flex;
+	flex-direction: row;
+}
+.page_sidebar_inner {
+	width: 368px;
+}
+.page_inner {
+	padding-right: 100px;
+	width: 65%;
+}
+.page_back a {
+	color: #CF0000;
+	font-weight: 500;
+}
+.page_content h1 {
+	font-size: 28px;
+	line-height: 36px;
+	color: #000000;
+}
+.page_article {
+	font-size: 18px;
+	line-height: 28px;
+}
+.page_main_text {
+	font-size: 16px;
+	color: #333333;
+}
+.page_main_text a {
+	color: #CF0000;
+	border-bottom: 1px solid #CF0000;
+}
+.page_main_text a:hover {
+	border-bottom: none;
+}
+.page_meta {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.page_date span {
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #BDBDBD;
+}
+.page_soc {
+	display: flex;
+	flex-direction: column;
+}
+.page_soc_title {
+	font-size: 14px;
+	line-height: 13px;
+	color: #CF0000;
+	font-weight: 500;
+	padding-bottom: 13px;
+}
 /* media */
 @media (max-width: 1560px) {
 	.advan_content {
