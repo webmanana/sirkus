@@ -1162,6 +1162,74 @@ input[type="search"]::-webkit-search-results-decoration {
 	transition: visibility 0s linear 0s, opacity 300ms;
 }
 /* media */
+.media_page_section {
+	padding-top: 32px;
+	padding-bottom: 80px;
+}
+.media_page_img img {
+	border-radius: 5px;
+}
+.media_page_block {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+.media_page_meta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding-bottom: 25px;
+}
+.media_page_title {
+	height: 90px;
+}
+.media_page_title a:hover h3 {
+	color: #CF0000;
+}
+.media_page_title h3 {
+	font-size: 16px;
+	color: #000;
+}
+.media_page_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.media_page_meta_desc span {
+	color: #BDBDBD;
+	font-size: 14px;
+	padding-left: 12px;
+}
+.media_page_bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.media_page_bottom a {
+	color: #CF0000;
+	font-weight: bold;
+}
+.media_page_bottom span {
+	color: #BDBDBD;
+	font-size: 14px;
+}
+.news_media_list_block {
+	width: 25%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 50px;
+    border-right: 1px solid #E4E4E4;
+}
+.news_media_list_block:nth-child(4n) {
+	border-right: none;
+}
+.news_media_list_inner {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -24px;
+    max-width: 1200px;
+}
 @media (max-width: 1560px) {
 	.advan_content {
 		margin: 0;
@@ -1238,10 +1306,25 @@ input[type="search"]::-webkit-search-results-decoration {
 	.page_img {
 		height: 480px;
 	}
+	.news_media_list_block {
+		width: 33.3333%;
+	}
+	.news_media_list_block:nth-child(4n) {
+		border-right: 1px solid #E4E4E4;
+	}
+	.news_media_list_block:nth-child(3n) {
+		border-right: none;
+	}
 }
 @media (max-width: 1080px) {
-	.container, .slide_container, .afisha_slide .slick-list, .header_container {
+	.container, .slide_container, .afisha_slide .slick-list, .header_container, .news_media_list_inner {
 		max-width: 880px;
+	}
+	.news_media_list_inner {
+		margin: 0;
+	}
+	.news_media_list_block {
+		padding: 0;
 	}
 	.header_inner {
 		padding: 0;
@@ -1280,14 +1363,14 @@ input[type="search"]::-webkit-search-results-decoration {
 		flex-direction: column;
 	}
 	.burger_mobile {
-    width: 62px;
-    height: 62px;
-    background-color: #B20000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
+	    width: 62px;
+	    height: 62px;
+	    background-color: #B20000;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    position: absolute;
+	    right: 0;
 	}
 	.news_list_img {
 		width: 35%;
@@ -1504,6 +1587,29 @@ input[type="search"]::-webkit-search-results-decoration {
 	.off-canvas {
 		background-color: #fff;
 		padding: 40px;
+	}
+	.news_media_list_block {
+		width: 100%;
+		border-right: none!important;
+		border-bottom: 1px solid #E4E4E4;
+		padding-bottom: 24px;
+		display: flex;
+		flex-direction: row;
+	}
+	.media_page_desc {
+		flex: 1;
+	}
+	.media_page_title h3 {
+		margin: 0;
+	}
+	.media_page_bottom a {
+		display: none;
+	}
+	.media_page_desc {
+	    padding-left: 24px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
 	}
 }
 @media (max-width: 970px) {
@@ -1781,6 +1887,25 @@ input[type="search"]::-webkit-search-results-decoration {
 	.footer_top, .footer_right {
 		flex-direction: column;
 	}
+	.news_media_list_block {
+		flex-direction: column;
+	}
+	.media_page_img img {
+		width: 100%;
+	}
+	.media_page_desc {
+		padding-top: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-bottom: 12px;
+	}
+	.news_media_list_block {
+		border-radius: 5px;
+		border: 1px solid #E0E0E0!important;
+	}
+	.news_nav {
+		padding-bottom: 20px;
+	}
 	.page_inner {
 		padding-bottom: 30px;
 	}
@@ -2057,10 +2182,13 @@ input[type="search"]::-webkit-search-results-decoration {
 		height: 140px;
 	}
 	.page_top_img_slide img, .page_top_img_slide {
-		height: 240px;
+		height: 220px;
+	}
+	.sidebar_news ul li {
+		border-color: #E0E0E0;
 	}
 	.page_img {
-    height: 300px;
+    	height: 300px;
 	}
 	.afisha_desc h3 {
 		font-size: 14px;
